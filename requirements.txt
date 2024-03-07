@@ -6,21 +6,29 @@
 #
 audioread==3.0.1
     # via librosa
+certifi==2024.2.2
+    # via requests
 cffi==1.16.0
     # via soundfile
+charset-normalizer==3.3.2
+    # via requests
 decorator==5.1.1
     # via librosa
 filelock==3.13.1
     # via torch
 fsspec==2024.2.0
     # via torch
+idna==3.6
+    # via requests
 jinja2==3.1.3
     # via torch
 joblib==1.3.2
     # via
     #   librosa
     #   scikit-learn
-librosa==0.7.0
+lazy-loader==0.3
+    # via librosa
+librosa==0.10.1
     # via -r requirements.in
 llvmlite==0.42.0
     # via numba
@@ -28,13 +36,14 @@ markupsafe==2.1.5
     # via jinja2
 mpmath==1.3.0
     # via sympy
+msgpack==1.0.8
+    # via librosa
 networkx==3.2.1
     # via torch
 numba==0.59.0
     # via
     #   -r requirements.in
     #   librosa
-    #   resampy
 numpy==1.26.4
     # via
     #   -r requirements.in
@@ -42,29 +51,35 @@ numpy==1.26.4
     #   numba
     #   opencv-contrib-python
     #   opencv-python
-    #   resampy
     #   scikit-learn
     #   scipy
+    #   soxr
     #   torchvision
 opencv-contrib-python==4.9.0.80
     # via -r requirements.in
 opencv-python==4.9.0.80
     # via -r requirements.in
+packaging==23.2
+    # via pooch
 pillow==10.2.0
     # via torchvision
+platformdirs==4.2.0
+    # via pooch
+pooch==1.8.1
+    # via librosa
 pycparser==2.21
     # via cffi
-resampy==0.4.3
-    # via librosa
+requests==2.31.0
+    # via pooch
 scikit-learn==1.4.1.post1
     # via librosa
 scipy==1.12.0
     # via
     #   librosa
     #   scikit-learn
-six==1.16.0
-    # via librosa
 soundfile==0.12.1
+    # via librosa
+soxr==0.3.7
     # via librosa
 sympy==1.12
     # via torch
@@ -79,4 +94,8 @@ torchvision==0.17.1
 tqdm==4.66.2
     # via -r requirements.in
 typing-extensions==4.10.0
-    # via torch
+    # via
+    #   librosa
+    #   torch
+urllib3==2.2.1
+    # via requests
