@@ -1,0 +1,8 @@
+librosa==0.7.0
+numpy
+opencv-contrib-python
+opencv-python
+torch
+torchvision
+tqdm
+numba
